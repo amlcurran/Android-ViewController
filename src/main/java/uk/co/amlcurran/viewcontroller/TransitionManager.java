@@ -5,7 +5,7 @@ import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-class TransitionManager {
+public class TransitionManager {
 
     private final Activity activity;
     private final ViewGroup viewGroup;
