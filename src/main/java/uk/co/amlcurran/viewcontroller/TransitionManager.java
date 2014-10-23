@@ -19,10 +19,10 @@ public class TransitionManager {
     }
 
     public void push(@NonNull ViewController viewController) {
-        currentViewController.stop();
+        currentViewController.popped();
         viewGroup.removeAllViews();
         viewGroup.addView(viewController.inflateView(LayoutInflater.from(activity), viewGroup));
-        viewController.start();
+        viewController.pushed();
         currentViewController = viewController;
     }
 

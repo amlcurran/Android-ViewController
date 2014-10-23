@@ -11,6 +11,10 @@ public interface ViewController {
 
     void stop();
 
+    void pushed();
+
+    void popped();
+
     static final ViewController NONE = new ViewController() {
         @Override
         public View inflateView(LayoutInflater layoutInflater, ViewGroup viewGroup) {
@@ -24,6 +28,16 @@ public interface ViewController {
 
         @Override
         public void stop() {
+
+        }
+
+        @Override
+        public void pushed() {
+
+        }
+
+        @Override
+        public void popped() {
 
         }
     };
